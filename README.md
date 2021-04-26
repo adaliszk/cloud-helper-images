@@ -12,6 +12,6 @@ thought why not share the tools I'm using to manage Micro-Services on various sc
 - Alerting
 
 ### Contribution
-If you found images useful,  I would appreciate  if you leave a star on Docker-HUB and on 
-GitHub!  Pull-Requests are welcomed,  but at this stage  I'm actively  updating  the code,
+If you found the images useful,  I would appreciate if you leave a star on Docker-HUB and 
+on GitHub! Pull-Requests are welcomed, but at this stage I'm actively updating  the code;
 you may end up out of sync very quickly!
