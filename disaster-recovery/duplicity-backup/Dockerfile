@@ -14,10 +14,7 @@ RUN dos2unix docker-entrypoint.sh && chmod +x /docker-entrypoint.sh
 
 # Build Runtime Environment
 # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-FROM alpine:3.13 as oci
-
-# Create a user for the container
-RUN addgroup --gid 1001 container && adduser --uid 1001 --shell /bin/bash -G container -S container
+FROM adaliszk/alpine:3.13 as runtime
 
 RUN apk --no-cache \
   add \

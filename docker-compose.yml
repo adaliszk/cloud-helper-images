@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+
+  alpine:
+    image: "adaliszk/alpine:${ALPINE_TAG:-3.13}"
+    build:
+      context: base-images/alpine
+      args:
+        ALPINE_TAG: "3.13"
