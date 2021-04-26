@@ -3,8 +3,15 @@ version: "3.8"
 services:
 
   alpine:
-    image: "adaliszk/alpine:${ALPINE_TAG:-3.13}"
+    image: "adaliszk/alpine:${ALPINE_TAG:-develop}"
     build:
       context: base-images/alpine
       args:
         ALPINE_TAG: "3.13"
+
+  duplicity-backup:
+    image: "adaliszk/duplicity-backup:${DUPLICITY_TAG:-develop}"
+    build: disaster-recovery/duplicity-backup
+    depends_on:
+      - alpine
+
